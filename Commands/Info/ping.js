@@ -7,13 +7,13 @@ module.exports = {
     PermsUser: [],
     run: async (client, interaction, args) => {
         const E = new EmbedBuilder()
-        .setTitle('✅ Latencia')
+        .setTitle('LATENCIA ✅')
         .setColor(client.color)
         .setTimestamp()
         .setThumbnail(client.user.displayAvatarURL())
         .setDescription(`
-> ⌛ Mi Latencia es de: **${client.ws.ping}ms**
-> ☄️ Mensajes Latencia: **${Math.floor(Math.random() * 40)}ms**`)
+⌛ Mi Latencia es de: **${client.ws.ping}ms**
+☄️ Mensajes Latencia: **${Math.floor(Math.random() * 40)}ms**`)
         interaction.followUp({
             content: null,
             embeds: [E]
