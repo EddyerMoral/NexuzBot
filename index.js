@@ -52,5 +52,4 @@ client.color = config.color;
 fs.readdirSync('./Files').forEach(File => {
    require(`./Files/${File}`)(client);
 });
-// CLIENT.LOGIN
 client.login(process.env.token);
